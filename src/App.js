@@ -1,11 +1,17 @@
-import './App.css';
+import { FilterPanel } from 'components/FilterPanel'
+import { JobList } from 'components/JobList'
+import { TheHeader } from 'components/TheHeader'
 
 function App() {
-  return (
-    <div className="App">
-      Hello
-    </div>
-  );
+	return (
+		<>
+			<TheHeader />
+			<div className="container">
+				<FilterPanel />
+				<JobList />
+			</div>
+		</>
+	)
 }
 
-export default App;
+export default App
